@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react";
 import * as pdfjsLib from "pdfjs-dist";
-import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
+
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FileText, Trash2 } from "lucide-react";
+pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 export function PdfDropzone({ onTextExtracted }) {
     const [file, setFile] = useState(null);

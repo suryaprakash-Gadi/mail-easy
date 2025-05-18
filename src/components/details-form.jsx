@@ -146,7 +146,7 @@ Preferred Output Format: ${outputType}
                     },
                     {
                         headers: {
-                            Authorization: "Bearer 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",
+                            Authorization: "Bearer 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",
                             "Content-Type": "application/json"
                         }
                     }
